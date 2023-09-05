@@ -10,6 +10,9 @@
 a,button{
     cursor: pointer;
 }
+img{
+    display: block;
+}
 
 /* Global Colors */
 :root{
@@ -49,18 +52,36 @@ a,button{
 }
 .normal-text{
     font-size: 0.9375vw;
-    font-weight: 400;
+    font-weight: 500;
     color: var(--text-color);
 }
 .flex-justify-between{
     justify-content: space-between;
+}
+.flex-justify-start{
+    justify-content: flex-start;
+}
+.img-fluid{
+    width: 100%;
+}
+.btn{
+    color: #ffffff;
+    background-color: var(--primary-color);
+    font-weight: 600;
+    font-size: 1.041vw;
+    padding: 15px 35px;
+    border-radius: 100px;
+    transition: all 0.3s ease-in-out;
+}
+.btn:hover{
+    background-color: var(--text-color);
 }
 
 /* Nav bar styles */
 nav{
     padding: 20px 15px;
     background-color: #ffffff;
-    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.07);
 }
 .logo-container .logo{
     width: 200px;
@@ -90,6 +111,31 @@ nav{
     align-items: center;
     gap: 15px;
 }
-.follow-container a{
-    height: 24px;
+.follow-container a i{
+    font-size: 24px;
+}
+/* banner styles */
+.secondary-title{
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.main-title{
+    font-size: 4.95vw;
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+#banner-section >.container>div{
+    flex: 1;
+}
+.icon-container{
+    gap: 10px;
+    margin-bottom: 15px;
+}
+.btn-container{
+    gap: 20px;
+    margin-top: 30px;
+}
+.second-btn{
+    background-color: var(--secondary-color);
 }
